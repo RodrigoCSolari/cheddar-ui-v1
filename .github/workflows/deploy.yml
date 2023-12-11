@@ -20,10 +20,8 @@ jobs:
       run: npm install
     - name: Build page
       run: npm run build:prod
-    - name: Deploy app to GitHub Pages
-      uses: lr0pb/deploy-pages@v1
-      id: deployment
+    - name: Deploy to gh-pages
+      uses: maxheld83/ghpages@v0.2.1
       with:
-        node-version: 18.x
-        build-comand: 'build'
-        output-dir: 'dist'
+        GH_PAT: ${{ secrets.GH_PAT }}
+        BUILD_DIR: ./dist 
