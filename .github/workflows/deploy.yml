@@ -2,8 +2,11 @@ name: deployment
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "test" ]
   
+permissions: 
+  actions: write
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
