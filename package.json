@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "description": "web front-ent for cheddar",
   "repository": "https://github.com/alpha-fi/cheddar-ui-v1",
-  "homepage": "https://rodrigocsolari.github.io/cheddar-ui-v1",
+  "homepage": "http://rodrigocsolari.com.ar",
   "scripts": {
     "precompile": "npm run build:prod",
     "compile": "gh-pages -d dist-prod/",
